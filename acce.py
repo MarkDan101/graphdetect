@@ -25,7 +25,6 @@ for endpoint in consoleDict:
         response = requests.get(ep)
         if response.status_code in [200, 403]:
             print('Its a graphql Page', endpoint)
-        else:
-            print("It is NOT a graphql page")
+        
 
 output = args.output
